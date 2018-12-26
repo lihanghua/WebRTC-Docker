@@ -51,7 +51,7 @@ COPY turnserver.conf /etc/turnserver.conf
 
 # AppRTC
 WORKDIR /
-RUN git clone https://github.com/webrtc/apprtc.git
+RUN git clone -b multiple_peers https://github.com/Piasy/apprtc.git
 
 WORKDIR apprtc
 
